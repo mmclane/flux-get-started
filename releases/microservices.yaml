@@ -1,0 +1,16 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: microservices
+  namespace: m3test
+  annotations:
+    fluxcd.io/automated: "false"
+    fluxcd.io/tag.chart-image: semver:~4.0
+spec:
+  releaseName: microservices
+  valuesFile: https://github.llamasoft.com/devops/llcp-helm-values/blob/develop/values/dev/values-dev.yaml
+  chart:
+    repository: http://artifactory.k8s.supplychainsoft.com/artifactory/Helm-virtual
+    name: llamasoft-cloud-platform
+    version: 19.291.1-f16f5ea
