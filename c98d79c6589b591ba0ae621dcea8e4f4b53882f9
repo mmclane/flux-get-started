@@ -1,0 +1,1 @@
+{"jobID":"be55090d-542c-f3e4-bcce-361c3b45be97","spec":{"type":"policy","cause":{"Message":"","User":"Matt McLane \u003cmatt.mclane@llamasoft.com\u003e"},"spec":{"demo:deployment/podinfo":{"add":{"tag_all":"glob:1.4.*"},"remove":{}}}},"result":null}
