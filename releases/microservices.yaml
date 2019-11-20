@@ -13,4 +13,4 @@ spec:
   chart:
     repository: http://artifactory.k8s.supplychainsoft.com/artifactory/Helm-virtual
     name: llamasoft-cloud-platform
-    version: 19.291.1-f16f5ea
+    version: 19.133.1-411e268
