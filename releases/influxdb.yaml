@@ -12,7 +12,6 @@ spec:
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: influxdb
-    version: latest
   values:
     ## influxdb image version
     ## ref: https://hub.docker.com/r/library/influxdb/tags/
