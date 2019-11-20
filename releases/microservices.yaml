@@ -11,6 +11,6 @@ spec:
   releaseName: microservices
   valuesFile: https://github.llamasoft.com/devops/llcp-helm-values/blob/develop/values/dev/values-dev.yaml
   chart:
-    repository: http://artifactory.k8s.supplychainsoft.com/artifactory/Helm-virtual/dev
+    repository: http://artifactory.k8s.supplychainsoft.com/artifactory/Helm-virtual/
     name: llamasoft-cloud-platform
     version: 19.312.1-6f0f1f5
