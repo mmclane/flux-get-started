@@ -3,13 +3,13 @@ apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
   name: grafana
-  namespace: m3test
+  namespace: grafana
   annotations:
     fluxcd.io/automated: "false"
     fluxcd.io/tag.chart-image: semver:~4.0
 spec:
   releaseName: grafana
-  valuesFile: https://github.llamasoft.com/devops/nonprod-configs/blob/master/aws/loadtesting/grafana/values.yaml
+  valuesFile: https://github.llamasoft.com/devops/nonprod-configs/blob/ltst_env/aws/ltst/grafana/values.yaml
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: grafana
