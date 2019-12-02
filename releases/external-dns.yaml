@@ -2,15 +2,15 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: influxdb
-  namespace: influxdb
+  name: external-dns
+  namespace: cert-manager
   annotations:
     fluxcd.io/automated: "false"
     fluxcd.io/tag.chart-image: semver:~4.0
 spec:
-  releaseName: influxdb
-  valuesFile: https://github.llamasoft.com/devops/nonprod-configs/tree/ltst_env/aws/ltst/influxdb/values.yaml
+  releaseName: external-dns
+  valuesFile: https://github.llamasoft.com/devops/nonprod-configs/tree/ltst_env/aws/ltst/external-dns/values.yaml
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
-    name: influxdb
-    version: 3.0.2
+    name: external-dns
+    version: 2.11.0
