@@ -1,0 +1,16 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: prometheus
+  namespace: metrics
+  annotations:
+    fluxcd.io/automated: "false"
+    fluxcd.io/tag.chart-image: semver:~4.0
+spec:
+  releaseName: prometheus
+  valuesFile: https://github.llamasoft.com/devops/nonprod-configs/blob/ltst_env/aws/ltst/prometheus/values.yaml
+  chart:
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: prometheus
+    version: 9.3.2
