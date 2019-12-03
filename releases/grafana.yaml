@@ -16,7 +16,7 @@ spec:
   values:
     rbac:
     create: true
-    pspEnabled: false
+    # pspEnabled: false
     pspUseAppArmor: true
     namespaced: false
     extraRoleRules: []
