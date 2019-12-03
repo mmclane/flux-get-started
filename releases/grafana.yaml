@@ -2,7 +2,7 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: grafana1
+  name: grafana
   namespace: grafana
   annotations:
     fluxcd.io/automated: "false"
