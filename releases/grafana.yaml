@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: grafana
   chart:
-    repository: https://kubernetes-charts.storage.googleapis.com/
+    repository: https://kubernetes-charts-incubator.storage.googleapis.com/
     name: grafana
     version: 4.1.0
   values:
