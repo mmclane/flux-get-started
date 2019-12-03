@@ -12,7 +12,7 @@ spec:
   names:
     kind: ServiceMonitor
     listKind: ServiceMonitorList
-    plural: servicemonitors
+    plural: testing
     singular: servicemonitor
   scope: ""
   validation:
