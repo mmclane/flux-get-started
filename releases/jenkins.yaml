@@ -48,7 +48,7 @@ spec:
         - master
         - nunit
         - kubernetes
-        - ltst
+        - m3test
       # configAutoReload requires UseSecurity is set to true:
       useSecurity: true
 
@@ -328,12 +328,12 @@ spec:
         # Set this path to jenkinsUriPrefix above or use annotations to rewrite path
         path: "/jenkins"
         # configures the hostname e.g. jenkins.example.com
-        hostName: ltst.dev.llamanotprod.com
+        hostName: m3test.dev.llamanotprod.com
         tls:
           - secretName: jenkins-tls
             hosts:
-              - ltst.dev.llamanotprod.com
-              - jenkins.ltst.dev.llamanotprod.com
+              - m3test.dev.llamanotprod.com
+              - jenkins.m3test.dev.llamanotprod.com
 
       # If you're running on GKE and need to configure a backendconfig
       # to finish ingress setup, use the following values.
@@ -395,7 +395,7 @@ spec:
         - slave
         - nunit
         - kubernetes
-        - ltst
+        - m3test
       # name of the secret to be used for image pulling
       imagePullSecretName:
       componentName: "jenkins-slave"
